@@ -4,8 +4,8 @@ import ActionButton from '@/components/shared/button/ActionButton';
 import HomePageText from '@/assets/HomePageText.png'
 import HomePageGraphic from '@/assets/HomePageGraphic.png'
 import SponsorRedBull from '@/assets/SponsorRedBull.png'
-import SponsorForbes from '@/assets/SponsorForbes.png'
-import SponsorFortune from '@/assets/SponsorFortune.png'
+import SponsorAdidas from '@/assets/SponsorAdidas.png'
+import SponsorNike from '@/assets/SponsorNike.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { motion } from 'framer-motion';
 
@@ -76,10 +76,7 @@ const Home = ({ setSelectedPage }: Props) => {
             {isAboveMediumScreens && (
                 <div className='h-[150px] w-full bg-primary-100 py-10'>
                     <div className='mx-auto w-5/6'>
-                        <div className='flex w-3/5 items-center justify-between gap-8'>
-                            <img src={SponsorRedBull} alt="redbull-sponsor" />
-                            <img src={SponsorForbes} alt="forbes-sponsor" />
-                            <img src={SponsorFortune} alt="fortune-sponsor" />
+                        <div className='flex w-4/5 items-center justify-between'>
                         </div>
                     </div>
                 </div>
