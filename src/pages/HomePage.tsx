@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 import { SelectedPage } from '@/types/types'
 import Home from '@/components/home/Home';
 import Benefits from '@/components/benefits/Benefits';
+import OurClasses from '@/components/our classes/OurClasses';
+import ContactUs from '@/components/contact/ContactUs';
 
 const HomePage = () => {
     const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home)
@@ -23,12 +25,13 @@ const HomePage = () => {
         handleScroll()
     }, []);
 
-
     return (
         <div className="app bg-gray-20">
             <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
             <Home setSelectedPage={setSelectedPage} />
-            <Benefits setSelectedPage={setSelectedPage}/>
+            <Benefits setSelectedPage={setSelectedPage} />
+            <OurClasses setSelectedPage={setSelectedPage}/>
+            <ContactUs setSelectedPage={setSelectedPage}/>
         </div>
     )
 }

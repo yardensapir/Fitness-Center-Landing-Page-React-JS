@@ -77,6 +77,10 @@ const Home = ({ setSelectedPage }: Props) => {
                 <div className='h-[150px] w-full bg-primary-100 py-10'>
                     <div className='mx-auto w-5/6'>
                         <div className='flex w-4/5 items-center justify-between'>
+
+                            <img src={SponsorRedBull} alt="redbull-sponsor" />
+                            <img src={SponsorNike} alt="redbull-sponsor" />
+                            <img src={SponsorAdidas} alt="redbull-sponsor" />
                         </div>
                     </div>
                 </div>
