@@ -1,5 +1,6 @@
 import Navbar from '@/components/shared/navbar/Navbar'
 import { useEffect, useState } from 'react'
+import Footer from '@/components/shared/footer/Footer';
 import { SelectedPage } from '@/types/types'
 import Home from '@/components/home/Home';
 import Benefits from '@/components/benefits/Benefits';
@@ -32,6 +33,7 @@ const HomePage = () => {
             <Benefits setSelectedPage={setSelectedPage} />
             <OurClasses setSelectedPage={setSelectedPage}/>
             <ContactUs setSelectedPage={setSelectedPage}/>
+            <Footer/>
         </div>
     )
 }
